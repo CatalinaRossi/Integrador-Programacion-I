@@ -14,7 +14,7 @@ def sumar(lista):
 suma = sumar(lista)
 print("La suma de los numeros es: ", suma) #para chequear 
 
-def funcion_maximo(lista):
+def maximo(lista):
     maximo = lista [0]
     for x in lista:
         if x > maximo :
