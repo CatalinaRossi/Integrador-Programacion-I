@@ -14,6 +14,13 @@ def sumar(lista):
 suma = sumar(lista)
 print("La suma de los numeros es: ", suma) #para chequear 
 
+def funcion_maximo(List_number):
+    maximo = lista [0]
+    for x in lista:
+        if x > maximo :
+            maximo = x 
+    return maximo 
+
 def promedio(lista):
     return sumar(lista)/len(lista)
 
