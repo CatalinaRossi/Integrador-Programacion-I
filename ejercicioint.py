@@ -1,9 +1,12 @@
 lista = []
 
+print("Bienvenido Usuario")
 for i in range(0,5):
     lista.append(int(input("Ingrese un número entero, por favor: ")))
 
-print(lista) #para chequear 
+print()
+print("Su lista de números enteros es: ", lista) 
+print()
 
 def sumar(lista):
     total = 0
@@ -12,7 +15,13 @@ def sumar(lista):
     return total
     
 suma = sumar(lista)
-print("La suma de los numeros es: ", suma) #para chequear 
+print("La suma de los valores es: ", suma)  
+
+def promedio(lista):
+    return sumar(lista)/len(lista)
+
+promedio = promedio(lista)
+print("El promedio de los valores es: ", promedio)  
 
 def maximo(lista):
     maximo = lista [0]
@@ -20,14 +29,16 @@ def maximo(lista):
         if x > maximo :
             maximo = x 
     return maximo 
-print("El maximo de los valores es:", maximo) #para chequear
 
-def resta(lista):
-    resultado = resta(lista)
-    print("El resultado de la resta de los valores es:") #para chequear
+maximo = maximo(lista)
+print("El máximo de los valores es:", maximo) 
 
-def promedio(lista):
-    return sumar(lista)/len(lista)
+def minimo(lista):
+    return min(lista)
 
-promedio = promedio(lista)
-print("El Promedio de los valores es: ", promedio) #para chequear 
+minimo = minimo(lista)
+print("El mínimo de los valores es:", minimo) 
+
+print()
+print("Muchas gracias por realizar estas operaciones")
+print()
