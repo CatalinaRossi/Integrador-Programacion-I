@@ -20,7 +20,7 @@ def maximo(lista):
         if x > maximo :
             maximo = x 
     return maximo 
-print("El maximo de los valores es:" maximo) #para chequear
+print("El maximo de los valores es:", maximo) #para chequear
 
 def resta(lista):
     resultado = resta(lista)
